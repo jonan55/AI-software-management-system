@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexusAI - Software Management System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script>
+    // Redirect cleanly to Flask dashboard route if accessed directly via browser
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/frontend/') {
+      window.location.href = '/dashboard';
+    }
+  </script>
+</head>
+<body data-page="dashboard">
+  <div style="display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; gap: 16px; font-family: sans-serif; background: #0b0f19; color: #f8fafc;">
+    <h1 style="font-size: 1.5rem;">NexusAI Software Management System</h1>
+    <p style="color: #94a3b8;">Redirecting to Dashboard...</p>
+    <a href="/dashboard" style="color: #6366f1; text-decoration: underline;">Click here if not redirected</a>
+  </div>
+</body>
+</html>
